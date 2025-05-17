@@ -1,9 +1,12 @@
 body {
+  background-image: url("assets/jungle-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   font-family: Arial, sans-serif;
   margin: 0;
-  background: url('assets/kasongo-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  padding: 0;
 }
 header {
   background-color: rgba(0, 0, 0, 0.8);
