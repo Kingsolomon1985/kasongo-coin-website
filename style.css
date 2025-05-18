@@ -1,38 +1,132 @@
+
 body {
-  background-image: url("assets/jungle-bg.jpg");
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('assets/jungle-bg.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  color: #f5f5f5;
 }
+
 header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .logo {
-  height: 50px;
+  height: 60px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 1.5em;
 }
-.hero img, .milestone-gallery img, section img {
-  width: 100%;
-  max-width: 800px;
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
 section {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 10px auto;
-  max-width: 960px;
+  padding: 3em 5%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 2em auto;
   border-radius: 8px;
+  max-width: 1000px;
+  animation: fadeInUp 1s ease;
 }
+
+h2 {
+  color: #ffd700;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  animation: fadeIn 2s ease;
+}
+
+.milestone-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.milestone-gallery img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.milestone-gallery img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #ffd700;
+  color: #000;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffbf00;
+}
+
 footer {
   text-align: center;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .milestone-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
