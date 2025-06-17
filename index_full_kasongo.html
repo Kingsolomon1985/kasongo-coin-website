@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kasongo Coin | Official Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-in-out; }
+    .slide-in-left { opacity: 0; transform: translateX(-30px); transition: all 0.8s ease-in-out; }
+    .slide-in-up { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-in-out; }
+    .animated { opacity: 1 !important; transform: translate(0, 0) !important; }
+    .hover-bounce:hover { transform: scale(1.05); transition: transform 0.3s ease; }
+    .kasongo-hero-animation { animation: kasongoHero 1.2s ease-in-out forwards; }
+    @keyframes kasongoHero {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200px 0; }
+      100% { background-position: 200px 0; }
+    }
+    .sunlight-shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      background-size: 400px 100%;
+      animation: shimmer 2s infinite linear;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+  <section class="hero"><img src="assets/Kasongo going big.png" alt="Kasongo Hero Banner" class="kasongo-hero-animation"></section>
+  <section id="about-kasongo" class="about fade-in"><h2 class="slide-in-left">Who Is Kasongo?</h2><p>Kasongo isn’t just a warthog — he’s a symbol of strength, survival, and second chances...</p><blockquote>The Dream is Valid.</blockquote></section>
+  <section id="why-kasongo" class="why fade-in"><h2 class="slide-in-left">Why Kasongo Exists</h2><p>Kasongo Coin was born from the vision of giving people...</p><p class="tagline"><strong>Kasongo is for the People. The Dream is Valid.</strong></p></section>
+  <section id="how-to-buy" class="buy-guide fade-in"><h2 class="slide-in-left">How to Buy $KGO</h2><ol class="slide-in-up"><li>Download a Web3 wallet...</li><li>Swap TON for $KGO — and you’re in!</li></ol></section>
+  <section id="news" class="news fade-in"><h2 class="slide-in-left">Kasongo in the News</h2><p>Featured on TON Memepad...</p></section>
+  <section id="community" class="community fade-in"><h2 class="slide-in-left">Join the Kasongo Community</h2><p>Connect with fellow believers in the dream.</p><div class="social-icons slide-in-up"><a href="#"><img src="assets/telegram.png"></a></div></section>
+</body>
+</html>
