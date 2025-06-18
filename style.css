@@ -1,18 +1,27 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #081a0e;
-  color: #fff;
+  background: linear-gradient(to bottom right, #ffffff, #e6f2ff);
+  color: #222;
   scroll-behavior: smooth;
-  background: url('assets/jungle-background.jpg') center center fixed no-repeat;
-  background-size: cover;
 }
-.background-layer {
-  background: url('assets/Kasongo going big.png') no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.25;
-  position: fixed;
-  inset: 0;
-  z-index: -1;
+header, footer {
+  background-color: #004d66;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  color: #004d66;
+  border-bottom: 2px solid #004d66;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
