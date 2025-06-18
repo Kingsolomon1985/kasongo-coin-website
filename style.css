@@ -153,6 +153,8 @@ h2 {
   display: block;
   margin: auto;
   border-radius: 10px;
+  opacity: 0.88;
+  mix-blend-mode: lighten;
 }
 
 .milestone-gallery img {
