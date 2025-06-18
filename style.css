@@ -2,95 +2,17 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #081a0e;
+  color: #fff;
+  scroll-behavior: smooth;
+  background: url('assets/jungle-background.jpg') center center fixed no-repeat;
+  background-size: cover;
+}
+.background-layer {
   background: url('assets/Kasongo going big.png') no-repeat center center fixed;
   background-size: cover;
-  color: #222;
-  scroll-behavior: smooth;
-}
-.background-fade {
+  opacity: 0.25;
   position: fixed;
   inset: 0;
-  background: rgba(255,255,255,0.88);
   z-index: -1;
-}
-header {
-  background-color: #004d66;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.logo {
-  height: 50px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero img {
-  display: none;
-}
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-h2 {
-  color: #004d66;
-  border-bottom: 2px solid #004d66;
-  padding-bottom: 10px;
-}
-.buy-icons, .social-icons, .milestone-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.buy-icons img, .social-icons img {
-  height: 55px;
-  cursor: pointer;
-}
-.roadmap-img {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: auto;
-}
-.milestone-gallery img {
-  height: 160px;
-  border-radius: 10px;
-}
-.tokenomics-visual {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.tokenomics-visual img {
-  width: 220px;
-  margin-bottom: 20px;
-}
-.tokenomics-visual ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  font-weight: bold;
-}
-footer {
-  background-color: #004d66;
-  color: white;
-  padding: 20px;
-  text-align: center;
 }
