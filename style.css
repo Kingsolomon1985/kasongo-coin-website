@@ -2,10 +2,11 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('assets/jungle-background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #081a0e;
   color: #fff;
   scroll-behavior: smooth;
+  background: url('assets/jungle-background.jpg') center center fixed no-repeat;
+  background-size: cover;
 }
 .background-layer {
   background: url('assets/Kasongo going big.png') no-repeat center center fixed;
