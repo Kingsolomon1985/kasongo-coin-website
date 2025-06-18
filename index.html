@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kasongo Coin | Official Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background-layer"></div>
+
   <header>
     <img src="assets/Kasongo-coin-logo.png" alt="Kasongo Coin Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="#about-kasongo">About</a></li>
         <li><a href="#how-to-buy">How to Buy</a></li>
+        <li><a href="#chart">Live Chart</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#milestones">Milestones</a></li>
         <li><a href="#tokenomics">Tokenomics</a></li>
@@ -20,8 +23,6 @@
       </ul>
     </nav>
   </header>
-
-  <div class="background-fade"></div>
 
   <section id="about-kasongo">
     <h2>Who Is Kasongo?</h2>
@@ -33,12 +34,20 @@
   <section id="how-to-buy">
     <h2>How to Buy $KGO</h2>
     <div class="buy-icons">
-      <a href="https://app.ston.fi" target="_blank"><img src="assets/stonfi.png" alt="Buy on Ston.fi" /></a>
-      <a href="https://t.me/blum/app" target="_blank"><img src="assets/blum.png" alt="Buy on Blum" /></a>
-      <a href="#"><img src="assets/binance.png" alt="Binance Web3 Wallet" /></a>
-      <a href="#"><img src="assets/okx.png" alt="OKX Web3 Wallet" /></a>
+      <a href="https://app.ston.fi/swap?ft=TON&tt=EQDXLBzdtWb47zCy_-TnVASDa7kxAP7_A6G_UGt7lQEbGD_5&chartVisible=false&chartInterval=1w" target="_blank"><img src="assets/stonfi.png" alt="Buy on Ston.fi" /></a>
+      <a href="https://t.me/blum/app?startapp=memepadjetton_KGO_ej6N8-ref_I4j1BC5Ioz" target="_blank"><img src="assets/blum.png" alt="Buy on Blum Memepad" /></a>
+      <a href="#"><img src="assets/binance.png" alt="Buy on Binance (Scan QR Below)" /></a>
+      <a href="https://web3.okx.com/ul/K2pWveP" target="_blank"><img src="assets/okx.png" alt="Buy on OKX Web3" /></a>
     </div>
-    <p class="buy-note">Connect your wallet and swap TON for $KGO to become part of the jungle revolution!</p>
+    <div class="qr-label">
+      <p>Scan to Buy on Binance Web3 Wallet</p>
+      <img src="assets/binance_qr.png" alt="Binance QR Code" class="qr-img" />
+    </div>
+  </section>
+
+  <section id="chart">
+    <h2>Live Chart</h2>
+    <iframe src="https://dexscreener.com/ton/EQD9Ug48jOUlZuTD7o-lvfWS78YA85Pyry6DywcTlZVqSwyx?embed=1" width="100%" height="500" frameborder="0"></iframe>
   </section>
 
   <section id="roadmap">
@@ -59,14 +68,14 @@
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="tokenomics-visual">
-      <img src="assets/tokenomics-icon.png" alt="Kasongo Tokenomics Head" />
-      <ul>
-        <li><strong>Max Supply:</strong> 1 Billion $KGO</li>
-        <li><strong>Circulation:</strong> 100%</li>
-        <li><strong>Renounced:</strong> Yes</li>
-        <li><strong>Founder:</strong> 1.09%</li>
-        <li><strong>Top 5 Holders:</strong> 15.98%</li>
-      </ul>
+      <img src="assets/tokenomics-icon.png" alt="Kasongo Head Icon" />
+      <div class="tokenomics-labels">
+        <span>Max Supply: 1B</span>
+        <span>Circulating: 100%</span>
+        <span>Renounced</span>
+        <span>Founder: 1.09%</span>
+        <span>Top 5 Holders: 15.98%</span>
+      </div>
     </div>
   </section>
 
