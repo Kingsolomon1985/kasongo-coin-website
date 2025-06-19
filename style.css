@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('assets/Kasongo-coin-logo.png') center center fixed no-repeat;
-  background-size: cover;
+  background: #000;
   color: #fff;
   scroll-behavior: smooth;
   opacity: 0.96;
@@ -19,13 +18,7 @@ body {
 }
 
 .logo-background-layer {
-  background: url('assets/Kasongo-coin-logo.png') center center fixed no-repeat;
-  background-size: cover;
-  opacity: 0.03;
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  filter: blur(1.2px);
+  display: none;
 }
 
 header {
