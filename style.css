@@ -1,10 +1,40 @@
 body {
   margin: 0;
-  font-family: 'Rubik Spray Paint', cursive, sans-serif;
-  background: #1abc9c;
+  font-family: 'Rubik', sans-serif;
+  background: url('assets/Kasongo going big.png') center center fixed no-repeat;
+  background-size: cover;
   color: #fff;
   scroll-behavior: smooth;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 30px;
+}
+
+h2 {
+  color: red;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+p, li, span, blockquote {
+  font-size: 1.1rem;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  color: white;
 }
 
 header {
@@ -15,7 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 3px solid #00e0b8;
+  border-bottom: 3px solid white;
 }
 
 .logo {
@@ -34,7 +64,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Rubik Spray Paint', cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 .kasongo-banner img {
@@ -42,8 +72,7 @@ nav a {
   height: auto;
   display: block;
   object-fit: cover;
-  margin-top: 0;
-  border-bottom: 3px solid #00e0b8;
+  border-bottom: 3px solid white;
   animation: bannerFade 1.5s ease-out forwards;
   opacity: 0;
   filter: brightness(1.1) contrast(1.05);
@@ -52,37 +81,6 @@ nav a {
 @keyframes bannerFade {
   0% { opacity: 0; transform: scale(1.03); }
   100% { opacity: 1; transform: scale(1); }
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
-}
-
-h1, h2, h3, h4, h5, h6, nav a, blockquote, span, p {
-  font-family: 'Rubik Spray Paint', cursive, sans-serif;
-  letter-spacing: 0.5px;
-}
-
-h2 {
-  color: #00e0b8;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #00e0b8;
-  padding-bottom: 10px;
-  text-shadow: 1px 1px 3px black;
-}
-
-.buy-steps {
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .buy-icons, .social-icons, .milestone-gallery {
@@ -151,9 +149,11 @@ h2 {
 }
 
 .tokenomics-visual img {
-  width: 300px;
+  width: 380px;
   grid-column: span 2;
   justify-self: center;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255,255,255,0.1);
 }
 
 .tokenomics-labels {
@@ -165,15 +165,15 @@ h2 {
 }
 
 .tokenomics-labels span {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px 18px;
   border-radius: 50%;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  min-width: 130px;
-  max-width: 150px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  min-width: 140px;
+  max-width: 160px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .social-icons {
@@ -199,7 +199,7 @@ footer {
   padding: 20px;
   margin-top: 40px;
   font-size: 0.9rem;
-  font-family: 'Rubik Spray Paint', cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,7 +211,7 @@ footer {
     padding: 20px 10px;
   }
   .milestone-gallery img { height: 160px !important; }
-  .tokenomics-visual img { width: 220px; }
+  .tokenomics-visual img { width: 280px; }
   .tokenomics-labels span {
     font-size: 0.85rem;
     min-width: unset;
