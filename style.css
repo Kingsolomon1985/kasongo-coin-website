@@ -1,34 +1,31 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #000;
+  font-family: 'Urban Jungle', 'Permanent Marker', cursive, sans-serif;
+  background: url('assets/Kasongo going big.png') center center fixed no-repeat;
+  background-size: cover;
   color: #fff;
   scroll-behavior: smooth;
-  opacity: 0.96;
-  filter: blur(0.3px);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
 }
 
 .background-layer {
-  background: url('assets/Kasongo going big.png') no-repeat center center fixed;
-  background-size: contain;
-  opacity: 0.25;
+  background: url('assets/Kasongo going big.png') center center fixed no-repeat;
+  background-size: cover;
+  opacity: 0.2;
   position: fixed;
   inset: 0;
   z-index: -1;
 }
 
-.logo-background-layer {
-  display: none;
-}
-
 header {
-  background-color: #004d66;
+  background-color: rgba(0, 77, 102, 0.85);
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-bottom: 3px solid #00e0b8;
 }
 
 .logo {
@@ -47,6 +44,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Urban Jungle', cursive;
 }
 
 .kasongo-banner img {
@@ -58,34 +56,37 @@ nav a {
   border-bottom: 3px solid #00e0b8;
   animation: bannerFade 1.5s ease-out forwards;
   opacity: 0;
+  filter: brightness(1.1) contrast(1.05);
 }
 
 @keyframes bannerFade {
-  0% {
-    opacity: 0;
-    transform: scale(1.03);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 section {
   padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   margin-top: 30px;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, blockquote, span, p {
+  font-family: 'Urban Jungle', cursive, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 h2 {
   color: #00e0b8;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   border-bottom: 2px solid #00e0b8;
   padding-bottom: 10px;
+  text-shadow: 1px 1px 3px black;
 }
 
 .buy-steps {
@@ -94,9 +95,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.buy-icons,
-.social-icons,
-.milestone-gallery {
+.buy-icons, .social-icons, .milestone-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -146,21 +145,10 @@ h2 {
   box-shadow: 0 0 15px rgba(0, 224, 184, 0.5);
 }
 
-.milestone-gallery img[alt*="500K"] {
-  height: 180px;
-}
-
-.milestone-gallery img[alt*="1M"] {
-  height: 200px;
-}
-
-.milestone-gallery img[alt*="2M"] {
-  height: 220px;
-}
-
-.milestone-gallery img[alt*="3M"] {
-  height: 240px;
-}
+.milestone-gallery img[alt*="500K"] { height: 180px; }
+.milestone-gallery img[alt*="1M"] { height: 200px; }
+.milestone-gallery img[alt*="2M"] { height: 220px; }
+.milestone-gallery img[alt*="3M"] { height: 240px; }
 
 .tokenomics-visual {
   display: grid;
@@ -197,7 +185,7 @@ h2 {
 }
 
 .social-icons {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
 }
@@ -219,6 +207,7 @@ footer {
   padding: 20px;
   margin-top: 40px;
   font-size: 0.9rem;
+  font-family: 'Urban Jungle', cursive;
 }
 
 @media screen and (max-width: 768px) {
@@ -232,17 +221,11 @@ footer {
   section {
     padding: 20px 10px;
   }
-  .milestone-gallery img {
-    height: 160px !important;
-  }
-  .tokenomics-visual img {
-    width: 220px;
-  }
+  .milestone-gallery img { height: 160px !important; }
+  .tokenomics-visual img { width: 220px; }
   .tokenomics-labels span {
     font-size: 0.85rem;
     min-width: unset;
   }
-  .buy-option img {
-    height: 55px;
-  }
+  .buy-option img { height: 55px; }
 }
