@@ -175,6 +175,11 @@ nav a {
   max-width: 160px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+.green-highlight {
+  color: #00c853;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 200, 83, 0.5);
+}
 
 .social-icons {
   background-color: rgba(0, 0, 0, 0.6);
